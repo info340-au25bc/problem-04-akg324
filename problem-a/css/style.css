@@ -1,0 +1,91 @@
+body {
+    margin: .5rem;
+    background-color: #93b8d7;
+    color: white;
+}
+
+nav {
+    display: flex;
+    justify-content: flex-end;
+}
+
+#social-links a, #hamburger-menu a{
+    color: white;
+    font-size: 2.5rem;
+    text-decoration: none;
+    margin-right: .5em;
+}
+
+#social-links {display: none;}
+
+main {
+    margin-top: 23vh;
+    text-align: center;
+    font-family: 'Kaushan Script', fantasy;
+}
+
+h1 {
+    font-size: 4rem;
+    margin: 0;
+}
+
+h2 {
+    font-size: 2rem;
+    margin-top: 2em;
+    font-weight: normal;
+}
+
+footer {display: none;}
+
+
+@media (min-width: 598px) {
+    #hamburger-menu {display: none;}
+    #social-links {display: block;}
+}
+
+@media (min-width: 768px) {
+    html {height: 100%;}
+
+    body{
+        background-image: url('../img/splash-md.jpg');
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    main {text-shadow: 1px 1px #153c43;}
+
+    footer {
+        display: block;
+        position: fixed;
+        bottom: 0;
+        right: 0;
+        color: white;
+        font-size: 0.75rem;
+        margin: 0.5rem;
+    }
+}
+
+@media (min-width: 992px) {
+    body {
+        background-image: url('../img/splash-lg.jpg');
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    
+    nav a {font-size: 1.5rem;}
+
+    main h1 {font-size: 5rem;}
+
+    main h2 {font-size: 3rem;}
+}
+
+@media (min-width: 1200px) {
+    body {
+        background-image: url('../img/splash-xl.jpg');
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+}
